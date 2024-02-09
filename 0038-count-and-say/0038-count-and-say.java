@@ -1,7 +1,6 @@
 class Solution {
   public String countAndSay(int n) {
     StringBuilder sb = new StringBuilder("1");
-
     while (--n > 0) {
       StringBuilder next = new StringBuilder();
       for (int i = 0; i < sb.length(); ++i) {
@@ -14,7 +13,6 @@ class Solution {
       }
       sb = next;
     }
-
     return sb.toString();
   }
 }
